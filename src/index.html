@@ -1,0 +1,365 @@
+@@include("_head.html", {"class":"home"}) 
+@@include("_header.html") 
+<section class="hero">
+	<div class="container hero__container">
+		<div class="hero__side">
+			<h1 class="hero__title">Профессиональный ремонт от</h1>
+			<div class="hero__cost">
+				<img src="./images/image-hero-price.png" alt="">
+				<span>руб./м<sup>2</sup></span>
+			</div>
+			<p class="hero__text">Сделаем ремонт в обозначенный срок или вернем деньги</p>
+			<div class="hero__advantages">
+				<div class="hero__advantages-item hero__advantages-item_arrival"><span>Бесплатный выезд в день обращения</span></div>
+				<div class="hero__advantages-item hero__advantages-item_start"><span>Начало работ на следующий день</span></div>
+				<div class="hero__advantages-item hero__advantages-item_prepay"><span>Работаем без предоплат</span></div>
+				<div class="hero__advantages-item hero__advantages-item_warranty"><span>Гарантия 5 лет</span></div>
+			</div>
+		</div>
+		<div class="hero__calculation calculator">
+			<h2 class="calculator__title">Рассчитайте стоимость ремонта</h2>
+			<form action="./" class="calculator__form">
+				<div class="calculator__terms">
+					<div class="calculator__term">
+						<h4 class="calculator__label">Что нужно отремонтировать</h4>
+						<div class="calculator__field calculator__field_select">
+							<select name="">
+								<option value="1">Квартира</option>
+								<option value="2">Дом</option>
+								<option value="3">Комната</option>
+							</select>
+						</div>
+					</div>
+					<div class="calculator__term">
+						<h4 class="calculator__label">Вид ремонта</h4>
+						<div class="calculator__field calculator__field_select">
+							<select name="">
+								<option value="1">Косметический</option>
+								<option value="2">Евроремонт</option>
+								<option value="3">Капитальный</option>
+							</select>
+						</div>
+					</div>
+					<div class="calculator__term">
+						<h4 class="calculator__label">Тип помещения</h4>
+						<div class="calculator__field calculator__field_select">
+							<select name="">
+								<option value="1">Новостройка</option>
+								<option value="2">Вторичное жилье</option>
+							</select>
+						</div>
+					</div>
+					<div class="calculator__term">
+						<h4 class="calculator__label">Площадь помещения</h4>
+						<div class="calculator__field">
+							<div class="calculator__field-space">
+								<span class="range__output">10</span> м<sup>2</sup>
+							</div>
+							<div class="calculator__field-range">
+								<input class="js-range" type="range" name="" value="10" min="5" max="50">
+							</div>
+						</div>
+					</div>
+					<div class="calculator__term">
+						<h4 class="calculator__label">Срок работ</h4>
+						<div class="calculator__field calculator__field_time">
+							От <span>20</span> до <span>35</span> дней
+						</div>
+					</div>
+				</div>
+				<div class="calculator__term">
+					<h4 class="calculator__label">Введите ваш телефон</h4>
+					<div class="calculator__field calculator__field_phone">
+						<input class="phone" type="tel" name="" data-inputmask="'mask':'+7 (999) 999-99-99'" data-inputmask-clearmaskonlostfocus="false">
+					</div>
+				</div>
+				<input class="calculator__get-btn button" type="submit" value="Получить смету">
+				<p class="calculator__agreement">Я даю согласие на обработку <a href="./">персональных данных</a></p>
+			</form>
+		</div>
+	</div>
+</section>
+
+<section class="discount">
+	<div class="container discount__container">
+		<div class="discount__inner">
+			<h2 class="discount__text">
+				<span>Скидка</span>
+				<span>На ремонт по нашему дизайн-проекту</span>
+			</h2>
+			<div class="discount__image-box">
+				<img src="./images/image-discount.png" alt="">
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="prices">
+	<div class="container">
+		<h1 class="prices__title">Цены на комплексные ремонты</h1>
+		<div class="prices__buttons">
+			<button class="prices__button active">Новостройка</button>
+			<button class="prices__button">Вторичка</button>
+		</div>
+		<div class="prices__row active">
+			@@include("_price-card.html", {"title":"Черновой ремонт", "old":10000, "actual":8000})
+			@@include("_price-card.html", {"title":"Евроремонт новостройки", "old":15000, "actual":13000})
+			@@include("_price-card.html", {"title":"Чистовой ремонт новостройки", "old":28000, "actual":25000})
+		</div>
+		<div class="prices__row">
+			@@include("_price-card.html", {"title":"Черновой ремонт вторички", "old":11000, "actual":9000})
+			@@include("_price-card.html", {"title":"Евроремонт вторички", "old":17000, "actual":14000})
+			@@include("_price-card.html", {"title":"Чистовой ремонт вторички", "old":30000, "actual":26000})
+		</div>
+	</div>
+</section>
+
+<section class="estimate">
+	<div class="container">
+		<div class="estimate__inner">
+			<div class="estimate__call">
+				<p class="estimate__text">Смета на ремонт и на материалы делается в течение 20 минут на объекте с использованием инновационной сметной программы</p>
+				<form action="./" class="estimate__form">
+					<input type="tel" class="estimate__input-phone phone" data-inputmask="'mask':'+7 (999) 999-99-99'" data-inputmask-clearmaskonlostfocus="false">
+					<input type="submit" class="estimate__input-submit button" value="Вызвать замерщика">
+				</form>
+			</div>
+			<div class="estimate__side">
+				<div class="estimate__img"><img src="./images/image-mobile-app.png" alt=""></div>
+				<div class="estimate__download">образец сметы, можно <a href="./">скачать тут</a></div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="installment">
+	<div class="container">
+		<div class="installment__inner">
+			<div class="installment__side">
+				<h1 class="installment__title">Выгодная рассрочка</h1>
+				<ul class="installment__list">
+					<li>Без первоначального взноса</li>
+					<li>Незаметно для семейного бюджета</li>
+					<li>Оформление в офисе за 20 минут</li>
+					<li>Сроком до 12 месяцев</li>
+				</ul>
+				<a href="./" class="installment__order button">Оставить заявку на рассрочку</a>
+			</div>
+			<div class="installment__img">
+				<img src="./images/image-installment-percent.png" alt="">
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="quality">
+	<div class="container">
+		<h1 class="quality__title title">Многоуровневый контроль качества</h1>
+		<div class="quality__items owl-carousel">
+			@@loop("_quality-item.html", [{
+					"img": "quality-1.png",
+					"name": "Сергей Дмитриев",
+					"pos": "Главный инженер"
+				},{
+					"img": "quality-2.png",
+					"name": "Иван Петров",
+					"pos": "Главный инженер"
+				},{
+					"img": "quality-3.png",
+					"name": "Семен Семенов",
+					"pos": "Главный инженер"
+				},{
+					"img": "quality-4.png",
+					"name": "Альтист Данилов",
+					"pos": "Главный инженер"
+				},{
+					"img": "quality-5.png",
+					"name": "Онлайн-камеры"
+				},{
+					"img": "quality-6.png",
+					"name": "Фото / Видеотчеты в WhatsApp"
+				}])
+		</div>
+	</div>
+</section>
+
+<section class="design">
+	<div class="container">
+		<div class="design__inner">
+			<div class="design__order">
+				<h1 class="design__title title">Закажите дизайн-проект</h1>
+				<ul class="design__list">
+					<li>Выезд и консультация дизайнера бесплатно</li>
+					<li>Подбор материалов под ваш бюджет</li>
+					<li>Скидка на ремонт при заказе дизайна</li>
+					<li>Экономия бюджета и времени</li>
+				</ul>
+				<form action="./" class="design__form">
+					<input type="text" class="design__name" placeholder="Ваше имя">
+					<input type="tel" class="design__phone phone" data-inputmask="'mask':'+7 (999) 999-99-99'" data-inputmask-clearmaskonlostfocus="false">
+					<input type="submit" value="Заказать" class="design__submit button">
+				</form>
+			</div>
+			<div class="design__image"><img src="./images/image-order.png" alt=""></div>
+		</div>
+	</div>
+</section>
+
+<section class="examples">
+	<div class="container">
+		<div class="examples__inner">
+			<h1 class="examples__title title">Примеры наших работ</h1>
+			<div class="examples__buttons">
+				<button class="examples__button active">Новостройка</button>
+				<button class="examples__button">Вторичка</button>
+			</div>
+			<div class="examples__slider active owl-carousel">
+				@@loop("_examples-slide.html", [{
+					"img": "image-order.png",
+					"title": "Евроремонт новостройки"
+				},{
+					"img": "image-repair.png",
+					"title": "Черновой ремонт"
+				},{
+					"img": "image-order.png",
+					"title": "Чистовой ремонт новостройки"
+				},{
+					"img": "image-repair.png",
+					"title": "Средний ремонт"
+				}])
+
+			</div>
+			<div class="examples__slider owl-carousel">
+				@@loop("_examples-slide.html", [{
+					"img": "image-order.png",
+					"title": "Евроремонт вторички"
+				},{
+					"img": "image-repair.png",
+					"title": "Черновой ремонт вторички"
+				},{
+					"img": "image-order.png",
+					"title": "Чистовой ремонт вторички"
+				},{
+					"img": "image-repair.png",
+					"title": "Средний ремонт вторички"
+				}])
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="license">
+	<div class="container">
+		<div class="license__inner">
+			<div class="license__title title">Наши сертификаты и лицензии</div>
+			<div class="license__items owl-carousel">
+				<div class="license__item">
+					<div class="license__item-image">
+						<img src="./images/sertificat-1.png" alt="">
+					</div>
+					<span class="license__item-name">Договор</span>
+				</div>
+				<div class="license__item">
+					<div class="license__item-image">
+						<img src="./images/sertificat-2.png" alt="">
+					</div>
+					<span class="license__item-name">Гарантия</span>
+				</div>
+				<div class="license__item">
+					<div class="license__item-image">
+						<img src="./images/sertificat-3.png" alt="">
+					</div>
+					<span class="license__item-name">Сертификат на материалы</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="workers">
+	<div class="container">
+		<h1 class="workers__title title">Наши мастера</h1>
+		<div class="workers__items owl-carousel">
+			@@loop("_workers-item.html", [{
+				"img": "master-1.png",
+				"name": "Андрей Александров",
+				"pos": "Мастер отделки"
+			},{
+				"img": "master-2.png",
+				"name": "Иван Романов",
+				"pos": "Мастер отделки"
+			},{
+				"img": "master-3.png",
+				"name": "Петр Рюрик",
+				"pos": "Мастер отделки"
+			},{
+				"img": "master-4.png",
+				"name": "Семен Долгорукий",
+				"pos": "Мастер отделки"
+			}])
+		</div>
+	</div>
+</section>
+
+<section class="scheme">
+	<div class="container">
+		<div class="scheme__title title">Схема нашей работы</div>
+		<div class="scheme__items owl-carousel">
+			<div class="scheme__item scheme__item_order"><span>Оставьте заявку</span></div>
+			<div class="scheme__item scheme__item_measure"><span>Бесплатный выезд замерщика</span></div>
+			<div class="scheme__item scheme__item_estimate"><span>Расчет сметы на объекте</span></div>
+			<div class="scheme__item scheme__item_contract"><span>Подписание договора</span></div>
+			<div class="scheme__item scheme__item_repairs"><span>Выполнение ремонтных работ</span></div>
+			<div class="scheme__item scheme__item_completion"><span>Сдача объекта</span></div>
+		</div>
+	</div>
+</section>
+
+<section class="insta">
+	<div class="container">
+		<div class="insta__title title">Отзывы из instagram</div>
+		<div class="insta__reviews owl-carousel">
+			<a href="./" class="insta__review">
+				<img src="./images/review-1.png" alt="">
+			</a>
+			<a href="./" class="insta__review">
+				<img src="./images/review-2.png" alt="">
+			</a>
+			<a href="./" class="insta__review">
+				<img src="./images/review-3.png" alt="">
+			</a>
+			<a href="./" class="insta__review">
+				<img src="./images/review-4.png" alt="">
+			</a>
+		</div>
+	</div>
+</section>
+
+<section class="faq faq-js">
+	<div class="container">
+		<div class="faq__items">
+			<div class="faq__item">
+				<h3 class="faq__item-title">Какой порядок оплаты?</h3>
+				<p class="faq__item-text">Мы работаем без предоплаты. Оплата производится поэтапно, после приемки каждого этапа работ.</p>
+			</div>
+			<div class="faq__item">
+				<h3 class="faq__item-title">В каком формате производится оплата?</h3>
+				<p class="faq__item-text">Выбирайте удобный для вас способ: наличными, по безналу или банковской картой.</p>
+			</div>
+			<div class="faq__item">
+				<h3 class="faq__item-title">Стоимость в смете окончательная?</h3>
+				<p class="faq__item-text">Смета и цены фиксируются за Вами после подписания и в процессе ремонта не меняется. Изменения возможны в случае вашего желания произвести дополнительные работы, после подписания двухстороннего дополнительного соглашения</p>
+			</div>
+			<div class="faq__item">
+				<h3 class="faq__item-title">Какие мастера работают на объекте?</h3>
+				<p class="faq__item-text">В нашей компании работают узконаправленые специалисты. Граждане РФ/</p>
+			</div>
+			<div class="faq__item">
+				<h3 class="faq__item-title">Есть ли лицензии и сертификаты?</h3>
+				<p class="faq__item-text">Да, мы работаем согласно ГОСТ и СНиП. На инженерные и строительные работы есть допуск СРО и сертификат ISO 9001./</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+@@include("_bottom.html")

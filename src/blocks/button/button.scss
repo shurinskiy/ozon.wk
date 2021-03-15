@@ -1,0 +1,30 @@
+.button {
+	$self: &;
+	box-sizing: border-box;
+	display: inline-block;
+	white-space: nowrap;
+	font-family: "MB", sans-serif;
+	font-size: 15px;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	outline: none;
+	border: none;
+	color: inherit;
+	background-color: #FDCA0D;
+	border-bottom: 3px solid #E0B30D;
+	min-width: 210px;
+	padding: 12px 15px 9px;
+	cursor: pointer;
+	
+	&_header-callback {
+		min-width: 0;
+
+		@include media('<=sm') {
+			font-size: 0px;
+			line-height: 0;
+			padding: 22px 23px;
+			background: url('#{$images-path}icons-sprite.svg#icon-phone-view-dark') center / 19px 19px no-repeat #FDCA0D;
+		}
+	}
+}

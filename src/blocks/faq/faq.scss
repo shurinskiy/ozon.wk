@@ -1,0 +1,26 @@
+.faq {
+	$self: &;
+	margin-bottom: 50px;
+
+	&__items {
+
+	}
+
+	&__item {
+		border: 1px solid #F1F1F1;
+		box-sizing: border-box;
+		border-radius: 5px;
+		margin-bottom: 12px;
+	}
+	
+	&__item-title {
+		font-family: "MB", sans-serif;
+		padding: 20px 28px;
+		cursor: pointer;
+	}
+	
+	&__item-text {
+		display: none;
+		padding: 20px 60px;
+	}
+}

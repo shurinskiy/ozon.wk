@@ -1,0 +1,658 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+	<link rel="shortcut icon" href="images/favicon.ico"> 
+	<link rel="stylesheet" href="style.css"> 
+	<title></title> 
+</head> 
+<body class="home"> 
+ 
+<header class="header"> 
+	<div class="container header__container">
+		<div class="header__inner">
+			<a href="./" class="header__logo"><img src="./images/logo.png" alt=""></a>
+			<div class="header__side">
+				<div class="header__side-top">
+					<a href="./" class="header__address">г. Москва, Новоданиловская Наб. д. 6</a>
+					<span class="header__menu-open"></span>
+					<a href="tel:+74597277789" class="header__phone">+7 (459) 727-77-89</a>
+					<a href="./" class="header__callback button button_header-callback">Обратный звонок</a>
+				</div>
+				<nav class="header__menu">
+					<span class="header__menu-close"></span>
+					<div class="header__menu-inner">
+						<a href="./" class="header__menu-link">Цены</a>
+						<a href="./" class="header__menu-link">Примеры работ</a>
+						<a href="./" class="header__menu-link">Рассрочка 0%</a>
+						<a href="./" class="header__menu-link">Отзывы</a>
+						<a href="./" class="header__menu-link">Дизайн</a>
+						<a href="./" class="header__menu-link">Контакты</a>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header> 
+ 
+<section class="hero">
+	<div class="container hero__container">
+		<div class="hero__side">
+			<h1 class="hero__title">Профессиональный ремонт от</h1>
+			<div class="hero__cost">
+				<img src="./images/image-hero-price.png" alt="">
+				<span>руб./м<sup>2</sup></span>
+			</div>
+			<p class="hero__text">Сделаем ремонт в обозначенный срок или вернем деньги</p>
+			<div class="hero__advantages">
+				<div class="hero__advantages-item hero__advantages-item_arrival"><span>Бесплатный выезд в день обращения</span></div>
+				<div class="hero__advantages-item hero__advantages-item_start"><span>Начало работ на следующий день</span></div>
+				<div class="hero__advantages-item hero__advantages-item_prepay"><span>Работаем без предоплат</span></div>
+				<div class="hero__advantages-item hero__advantages-item_warranty"><span>Гарантия 5 лет</span></div>
+			</div>
+		</div>
+		<div class="hero__calculation calculator">
+			<h2 class="calculator__title">Рассчитайте стоимость ремонта</h2>
+			<form action="./" class="calculator__form">
+				<div class="calculator__terms">
+					<div class="calculator__term">
+						<h4 class="calculator__label">Что нужно отремонтировать</h4>
+						<div class="calculator__field calculator__field_select">
+							<select name="">
+								<option value="1">Квартира</option>
+								<option value="2">Дом</option>
+								<option value="3">Комната</option>
+							</select>
+						</div>
+					</div>
+					<div class="calculator__term">
+						<h4 class="calculator__label">Вид ремонта</h4>
+						<div class="calculator__field calculator__field_select">
+							<select name="">
+								<option value="1">Косметический</option>
+								<option value="2">Евроремонт</option>
+								<option value="3">Капитальный</option>
+							</select>
+						</div>
+					</div>
+					<div class="calculator__term">
+						<h4 class="calculator__label">Тип помещения</h4>
+						<div class="calculator__field calculator__field_select">
+							<select name="">
+								<option value="1">Новостройка</option>
+								<option value="2">Вторичное жилье</option>
+							</select>
+						</div>
+					</div>
+					<div class="calculator__term">
+						<h4 class="calculator__label">Площадь помещения</h4>
+						<div class="calculator__field">
+							<div class="calculator__field-space">
+								<span class="range__output">10</span> м<sup>2</sup>
+							</div>
+							<div class="calculator__field-range">
+								<input class="js-range" type="range" name="" value="10" min="5" max="50">
+							</div>
+						</div>
+					</div>
+					<div class="calculator__term">
+						<h4 class="calculator__label">Срок работ</h4>
+						<div class="calculator__field calculator__field_time">
+							От <span>20</span> до <span>35</span> дней
+						</div>
+					</div>
+				</div>
+				<div class="calculator__term">
+					<h4 class="calculator__label">Введите ваш телефон</h4>
+					<div class="calculator__field calculator__field_phone">
+						<input class="phone" type="tel" name="" data-inputmask="'mask':'+7 (999) 999-99-99'" data-inputmask-clearmaskonlostfocus="false">
+					</div>
+				</div>
+				<input class="calculator__get-btn button" type="submit" value="Получить смету">
+				<p class="calculator__agreement">Я даю согласие на обработку <a href="./">персональных данных</a></p>
+			</form>
+		</div>
+	</div>
+</section>
+
+<section class="discount">
+	<div class="container discount__container">
+		<div class="discount__inner">
+			<h2 class="discount__text">
+				<span>Скидка</span>
+				<span>На ремонт по нашему дизайн-проекту</span>
+			</h2>
+			<div class="discount__image-box">
+				<img src="./images/image-discount.png" alt="">
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="prices">
+	<div class="container">
+		<h1 class="prices__title">Цены на комплексные ремонты</h1>
+		<div class="prices__buttons">
+			<button class="prices__button active">Новостройка</button>
+			<button class="prices__button">Вторичка</button>
+		</div>
+		<div class="prices__row active">
+			<div class="prices__item">
+	<h2 class="prices__item-title title">Черновой ремонт</h2>
+	<div class="prices__item-content">
+		<p class="prices__item-price-old">10000 р/м<sup>2</sup> по полу</p>
+		<p class="prices__item-price-actual">
+			<span>8000 р/м<sup>2</sup></span>
+			<span>по полу</span>
+		</p>
+		<ul class="prices__item-text">
+			<li>Устройство стяжки по маякам</li>
+			<li>Грунтовка пола и стен</li>
+			<li>Грунтовка стен (бетоноконтактом)</li>
+			<li>Гидроизоляция мокрых зон</li>
+			<li>Шпатлевка стен</li>
+			<li>Установка электроточек</li>
+			<li>Сборка электрощита</li>
+			<li>Прокладка кабеля</li>
+			<li>Комплексная разводка труб водоснабжения</li>
+			<li>Комплексная разводка труб канализации</li>
+		</ul>
+		<a href="#" class="prices__item-order-btn button">Отправить заявку</a>
+	</div>
+</div>
+			<div class="prices__item">
+	<h2 class="prices__item-title title">Евроремонт новостройки</h2>
+	<div class="prices__item-content">
+		<p class="prices__item-price-old">15000 р/м<sup>2</sup> по полу</p>
+		<p class="prices__item-price-actual">
+			<span>13000 р/м<sup>2</sup></span>
+			<span>по полу</span>
+		</p>
+		<ul class="prices__item-text">
+			<li>Устройство стяжки по маякам</li>
+			<li>Грунтовка пола и стен</li>
+			<li>Грунтовка стен (бетоноконтактом)</li>
+			<li>Гидроизоляция мокрых зон</li>
+			<li>Шпатлевка стен</li>
+			<li>Установка электроточек</li>
+			<li>Сборка электрощита</li>
+			<li>Прокладка кабеля</li>
+			<li>Комплексная разводка труб водоснабжения</li>
+			<li>Комплексная разводка труб канализации</li>
+		</ul>
+		<a href="#" class="prices__item-order-btn button">Отправить заявку</a>
+	</div>
+</div>
+			<div class="prices__item">
+	<h2 class="prices__item-title title">Чистовой ремонт новостройки</h2>
+	<div class="prices__item-content">
+		<p class="prices__item-price-old">28000 р/м<sup>2</sup> по полу</p>
+		<p class="prices__item-price-actual">
+			<span>25000 р/м<sup>2</sup></span>
+			<span>по полу</span>
+		</p>
+		<ul class="prices__item-text">
+			<li>Устройство стяжки по маякам</li>
+			<li>Грунтовка пола и стен</li>
+			<li>Грунтовка стен (бетоноконтактом)</li>
+			<li>Гидроизоляция мокрых зон</li>
+			<li>Шпатлевка стен</li>
+			<li>Установка электроточек</li>
+			<li>Сборка электрощита</li>
+			<li>Прокладка кабеля</li>
+			<li>Комплексная разводка труб водоснабжения</li>
+			<li>Комплексная разводка труб канализации</li>
+		</ul>
+		<a href="#" class="prices__item-order-btn button">Отправить заявку</a>
+	</div>
+</div>
+		</div>
+		<div class="prices__row">
+			<div class="prices__item">
+	<h2 class="prices__item-title title">Черновой ремонт вторички</h2>
+	<div class="prices__item-content">
+		<p class="prices__item-price-old">11000 р/м<sup>2</sup> по полу</p>
+		<p class="prices__item-price-actual">
+			<span>9000 р/м<sup>2</sup></span>
+			<span>по полу</span>
+		</p>
+		<ul class="prices__item-text">
+			<li>Устройство стяжки по маякам</li>
+			<li>Грунтовка пола и стен</li>
+			<li>Грунтовка стен (бетоноконтактом)</li>
+			<li>Гидроизоляция мокрых зон</li>
+			<li>Шпатлевка стен</li>
+			<li>Установка электроточек</li>
+			<li>Сборка электрощита</li>
+			<li>Прокладка кабеля</li>
+			<li>Комплексная разводка труб водоснабжения</li>
+			<li>Комплексная разводка труб канализации</li>
+		</ul>
+		<a href="#" class="prices__item-order-btn button">Отправить заявку</a>
+	</div>
+</div>
+			<div class="prices__item">
+	<h2 class="prices__item-title title">Евроремонт вторички</h2>
+	<div class="prices__item-content">
+		<p class="prices__item-price-old">17000 р/м<sup>2</sup> по полу</p>
+		<p class="prices__item-price-actual">
+			<span>14000 р/м<sup>2</sup></span>
+			<span>по полу</span>
+		</p>
+		<ul class="prices__item-text">
+			<li>Устройство стяжки по маякам</li>
+			<li>Грунтовка пола и стен</li>
+			<li>Грунтовка стен (бетоноконтактом)</li>
+			<li>Гидроизоляция мокрых зон</li>
+			<li>Шпатлевка стен</li>
+			<li>Установка электроточек</li>
+			<li>Сборка электрощита</li>
+			<li>Прокладка кабеля</li>
+			<li>Комплексная разводка труб водоснабжения</li>
+			<li>Комплексная разводка труб канализации</li>
+		</ul>
+		<a href="#" class="prices__item-order-btn button">Отправить заявку</a>
+	</div>
+</div>
+			<div class="prices__item">
+	<h2 class="prices__item-title title">Чистовой ремонт вторички</h2>
+	<div class="prices__item-content">
+		<p class="prices__item-price-old">30000 р/м<sup>2</sup> по полу</p>
+		<p class="prices__item-price-actual">
+			<span>26000 р/м<sup>2</sup></span>
+			<span>по полу</span>
+		</p>
+		<ul class="prices__item-text">
+			<li>Устройство стяжки по маякам</li>
+			<li>Грунтовка пола и стен</li>
+			<li>Грунтовка стен (бетоноконтактом)</li>
+			<li>Гидроизоляция мокрых зон</li>
+			<li>Шпатлевка стен</li>
+			<li>Установка электроточек</li>
+			<li>Сборка электрощита</li>
+			<li>Прокладка кабеля</li>
+			<li>Комплексная разводка труб водоснабжения</li>
+			<li>Комплексная разводка труб канализации</li>
+		</ul>
+		<a href="#" class="prices__item-order-btn button">Отправить заявку</a>
+	</div>
+</div>
+		</div>
+	</div>
+</section>
+
+<section class="estimate">
+	<div class="container">
+		<div class="estimate__inner">
+			<div class="estimate__call">
+				<p class="estimate__text">Смета на ремонт и на материалы делается в течение 20 минут на объекте с использованием инновационной сметной программы</p>
+				<form action="./" class="estimate__form">
+					<input type="tel" class="estimate__input-phone phone" data-inputmask="'mask':'+7 (999) 999-99-99'" data-inputmask-clearmaskonlostfocus="false">
+					<input type="submit" class="estimate__input-submit button" value="Вызвать замерщика">
+				</form>
+			</div>
+			<div class="estimate__side">
+				<div class="estimate__img"><img src="./images/image-mobile-app.png" alt=""></div>
+				<div class="estimate__download">образец сметы, можно <a href="./">скачать тут</a></div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="installment">
+	<div class="container">
+		<div class="installment__inner">
+			<div class="installment__side">
+				<h1 class="installment__title">Выгодная рассрочка</h1>
+				<ul class="installment__list">
+					<li>Без первоначального взноса</li>
+					<li>Незаметно для семейного бюджета</li>
+					<li>Оформление в офисе за 20 минут</li>
+					<li>Сроком до 12 месяцев</li>
+				</ul>
+				<a href="./" class="installment__order button">Оставить заявку на рассрочку</a>
+			</div>
+			<div class="installment__img">
+				<img src="./images/image-installment-percent.png" alt="">
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="quality">
+	<div class="container">
+		<h1 class="quality__title title">Многоуровневый контроль качества</h1>
+		<div class="quality__items owl-carousel">
+			<div class="quality__item">
+	<div class="quality__item-image">
+		<img src="./images/quality-1.png" alt="">
+	</div>
+	<div class="quality__item-text">
+		<span class="quality__item-name">Сергей Дмитриев</span>
+		 <span class="quality__item-position">Главный инженер</span> 
+		<p class="quality__item-description">Контролирует слаженную работу всех сотрудников на Вашем объекте</p>
+	</div>
+</div><div class="quality__item">
+	<div class="quality__item-image">
+		<img src="./images/quality-2.png" alt="">
+	</div>
+	<div class="quality__item-text">
+		<span class="quality__item-name">Иван Петров</span>
+		 <span class="quality__item-position">Главный инженер</span> 
+		<p class="quality__item-description">Контролирует слаженную работу всех сотрудников на Вашем объекте</p>
+	</div>
+</div><div class="quality__item">
+	<div class="quality__item-image">
+		<img src="./images/quality-3.png" alt="">
+	</div>
+	<div class="quality__item-text">
+		<span class="quality__item-name">Семен Семенов</span>
+		 <span class="quality__item-position">Главный инженер</span> 
+		<p class="quality__item-description">Контролирует слаженную работу всех сотрудников на Вашем объекте</p>
+	</div>
+</div><div class="quality__item">
+	<div class="quality__item-image">
+		<img src="./images/quality-4.png" alt="">
+	</div>
+	<div class="quality__item-text">
+		<span class="quality__item-name">Альтист Данилов</span>
+		 <span class="quality__item-position">Главный инженер</span> 
+		<p class="quality__item-description">Контролирует слаженную работу всех сотрудников на Вашем объекте</p>
+	</div>
+</div><div class="quality__item">
+	<div class="quality__item-image">
+		<img src="./images/quality-5.png" alt="">
+	</div>
+	<div class="quality__item-text">
+		<span class="quality__item-name">Онлайн-камеры</span>
+		
+		<p class="quality__item-description">Контролирует слаженную работу всех сотрудников на Вашем объекте</p>
+	</div>
+</div><div class="quality__item">
+	<div class="quality__item-image">
+		<img src="./images/quality-6.png" alt="">
+	</div>
+	<div class="quality__item-text">
+		<span class="quality__item-name">Фото / Видеотчеты в WhatsApp</span>
+		
+		<p class="quality__item-description">Контролирует слаженную работу всех сотрудников на Вашем объекте</p>
+	</div>
+</div>
+		</div>
+	</div>
+</section>
+
+<section class="design">
+	<div class="container">
+		<div class="design__inner">
+			<div class="design__order">
+				<h1 class="design__title title">Закажите дизайн-проект</h1>
+				<ul class="design__list">
+					<li>Выезд и консультация дизайнера бесплатно</li>
+					<li>Подбор материалов под ваш бюджет</li>
+					<li>Скидка на ремонт при заказе дизайна</li>
+					<li>Экономия бюджета и времени</li>
+				</ul>
+				<form action="./" class="design__form">
+					<input type="text" class="design__name" placeholder="Ваше имя">
+					<input type="tel" class="design__phone phone" data-inputmask="'mask':'+7 (999) 999-99-99'" data-inputmask-clearmaskonlostfocus="false">
+					<input type="submit" value="Заказать" class="design__submit button">
+				</form>
+			</div>
+			<div class="design__image"><img src="./images/image-order.png" alt=""></div>
+		</div>
+	</div>
+</section>
+
+<section class="examples">
+	<div class="container">
+		<div class="examples__inner">
+			<h1 class="examples__title title">Примеры наших работ</h1>
+			<div class="examples__buttons">
+				<button class="examples__button active">Новостройка</button>
+				<button class="examples__button">Вторичка</button>
+			</div>
+			<div class="examples__slider active owl-carousel">
+				<div class="examples__slide">
+	<div class="examples__image">
+		<img src="./images/image-order.png" alt="">
+	</div>
+	<div class="examples__side">
+		<h2 class="examples__side-title title">Евроремонт новостройки</h2>
+		<p class="examples__side-note"><strong>Общая площадь:</strong> 30м2</p>
+		<p class="examples__side-note"><strong>Срок исполнения:</strong> 35 дней Стоимость работ: 240 500 руб.</p>
+		<p class="examples__side-text"><strong>Виды работ:</strong> Устройство стяжки по маякам, возведение перегородок, выравнивание стен, устройство потолка из гипсокартона, шпатлевка стен и потолка, разводка электрики, укладка плитки, укладка паркетной доски, разводка труб водоснабжения, установка сантехники, покраска стен и потолка, установка светильников<br> Тип ремонта: Евроремонт</p>
+		<a href="./" class="examples__side-button button">консультация</a>
+	</div>
+</div><div class="examples__slide">
+	<div class="examples__image">
+		<img src="./images/image-repair.png" alt="">
+	</div>
+	<div class="examples__side">
+		<h2 class="examples__side-title title">Черновой ремонт</h2>
+		<p class="examples__side-note"><strong>Общая площадь:</strong> 30м2</p>
+		<p class="examples__side-note"><strong>Срок исполнения:</strong> 35 дней Стоимость работ: 240 500 руб.</p>
+		<p class="examples__side-text"><strong>Виды работ:</strong> Устройство стяжки по маякам, возведение перегородок, выравнивание стен, устройство потолка из гипсокартона, шпатлевка стен и потолка, разводка электрики, укладка плитки, укладка паркетной доски, разводка труб водоснабжения, установка сантехники, покраска стен и потолка, установка светильников<br> Тип ремонта: Евроремонт</p>
+		<a href="./" class="examples__side-button button">консультация</a>
+	</div>
+</div><div class="examples__slide">
+	<div class="examples__image">
+		<img src="./images/image-order.png" alt="">
+	</div>
+	<div class="examples__side">
+		<h2 class="examples__side-title title">Чистовой ремонт новостройки</h2>
+		<p class="examples__side-note"><strong>Общая площадь:</strong> 30м2</p>
+		<p class="examples__side-note"><strong>Срок исполнения:</strong> 35 дней Стоимость работ: 240 500 руб.</p>
+		<p class="examples__side-text"><strong>Виды работ:</strong> Устройство стяжки по маякам, возведение перегородок, выравнивание стен, устройство потолка из гипсокартона, шпатлевка стен и потолка, разводка электрики, укладка плитки, укладка паркетной доски, разводка труб водоснабжения, установка сантехники, покраска стен и потолка, установка светильников<br> Тип ремонта: Евроремонт</p>
+		<a href="./" class="examples__side-button button">консультация</a>
+	</div>
+</div><div class="examples__slide">
+	<div class="examples__image">
+		<img src="./images/image-repair.png" alt="">
+	</div>
+	<div class="examples__side">
+		<h2 class="examples__side-title title">Средний ремонт</h2>
+		<p class="examples__side-note"><strong>Общая площадь:</strong> 30м2</p>
+		<p class="examples__side-note"><strong>Срок исполнения:</strong> 35 дней Стоимость работ: 240 500 руб.</p>
+		<p class="examples__side-text"><strong>Виды работ:</strong> Устройство стяжки по маякам, возведение перегородок, выравнивание стен, устройство потолка из гипсокартона, шпатлевка стен и потолка, разводка электрики, укладка плитки, укладка паркетной доски, разводка труб водоснабжения, установка сантехники, покраска стен и потолка, установка светильников<br> Тип ремонта: Евроремонт</p>
+		<a href="./" class="examples__side-button button">консультация</a>
+	</div>
+</div>
+
+			</div>
+			<div class="examples__slider owl-carousel">
+				<div class="examples__slide">
+	<div class="examples__image">
+		<img src="./images/image-order.png" alt="">
+	</div>
+	<div class="examples__side">
+		<h2 class="examples__side-title title">Евроремонт вторички</h2>
+		<p class="examples__side-note"><strong>Общая площадь:</strong> 30м2</p>
+		<p class="examples__side-note"><strong>Срок исполнения:</strong> 35 дней Стоимость работ: 240 500 руб.</p>
+		<p class="examples__side-text"><strong>Виды работ:</strong> Устройство стяжки по маякам, возведение перегородок, выравнивание стен, устройство потолка из гипсокартона, шпатлевка стен и потолка, разводка электрики, укладка плитки, укладка паркетной доски, разводка труб водоснабжения, установка сантехники, покраска стен и потолка, установка светильников<br> Тип ремонта: Евроремонт</p>
+		<a href="./" class="examples__side-button button">консультация</a>
+	</div>
+</div><div class="examples__slide">
+	<div class="examples__image">
+		<img src="./images/image-repair.png" alt="">
+	</div>
+	<div class="examples__side">
+		<h2 class="examples__side-title title">Черновой ремонт вторички</h2>
+		<p class="examples__side-note"><strong>Общая площадь:</strong> 30м2</p>
+		<p class="examples__side-note"><strong>Срок исполнения:</strong> 35 дней Стоимость работ: 240 500 руб.</p>
+		<p class="examples__side-text"><strong>Виды работ:</strong> Устройство стяжки по маякам, возведение перегородок, выравнивание стен, устройство потолка из гипсокартона, шпатлевка стен и потолка, разводка электрики, укладка плитки, укладка паркетной доски, разводка труб водоснабжения, установка сантехники, покраска стен и потолка, установка светильников<br> Тип ремонта: Евроремонт</p>
+		<a href="./" class="examples__side-button button">консультация</a>
+	</div>
+</div><div class="examples__slide">
+	<div class="examples__image">
+		<img src="./images/image-order.png" alt="">
+	</div>
+	<div class="examples__side">
+		<h2 class="examples__side-title title">Чистовой ремонт вторички</h2>
+		<p class="examples__side-note"><strong>Общая площадь:</strong> 30м2</p>
+		<p class="examples__side-note"><strong>Срок исполнения:</strong> 35 дней Стоимость работ: 240 500 руб.</p>
+		<p class="examples__side-text"><strong>Виды работ:</strong> Устройство стяжки по маякам, возведение перегородок, выравнивание стен, устройство потолка из гипсокартона, шпатлевка стен и потолка, разводка электрики, укладка плитки, укладка паркетной доски, разводка труб водоснабжения, установка сантехники, покраска стен и потолка, установка светильников<br> Тип ремонта: Евроремонт</p>
+		<a href="./" class="examples__side-button button">консультация</a>
+	</div>
+</div><div class="examples__slide">
+	<div class="examples__image">
+		<img src="./images/image-repair.png" alt="">
+	</div>
+	<div class="examples__side">
+		<h2 class="examples__side-title title">Средний ремонт вторички</h2>
+		<p class="examples__side-note"><strong>Общая площадь:</strong> 30м2</p>
+		<p class="examples__side-note"><strong>Срок исполнения:</strong> 35 дней Стоимость работ: 240 500 руб.</p>
+		<p class="examples__side-text"><strong>Виды работ:</strong> Устройство стяжки по маякам, возведение перегородок, выравнивание стен, устройство потолка из гипсокартона, шпатлевка стен и потолка, разводка электрики, укладка плитки, укладка паркетной доски, разводка труб водоснабжения, установка сантехники, покраска стен и потолка, установка светильников<br> Тип ремонта: Евроремонт</p>
+		<a href="./" class="examples__side-button button">консультация</a>
+	</div>
+</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="license">
+	<div class="container">
+		<div class="license__inner">
+			<div class="license__title title">Наши сертификаты и лицензии</div>
+			<div class="license__items owl-carousel">
+				<div class="license__item">
+					<div class="license__item-image">
+						<img src="./images/sertificat-1.png" alt="">
+					</div>
+					<span class="license__item-name">Договор</span>
+				</div>
+				<div class="license__item">
+					<div class="license__item-image">
+						<img src="./images/sertificat-2.png" alt="">
+					</div>
+					<span class="license__item-name">Гарантия</span>
+				</div>
+				<div class="license__item">
+					<div class="license__item-image">
+						<img src="./images/sertificat-3.png" alt="">
+					</div>
+					<span class="license__item-name">Сертификат на материалы</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="workers">
+	<div class="container">
+		<h1 class="workers__title title">Наши мастера</h1>
+		<div class="workers__items owl-carousel">
+			<div class="workers__item">
+	<div class="workers__item-image">
+		<img src="./images/master-1.png" alt="">
+	</div>
+	<div class="workers__item-info">
+		<h3>Андрей Александров</h3>
+		<span>Мастер отделки</span>
+	</div>
+</div>
+<div class="workers__item">
+	<div class="workers__item-image">
+		<img src="./images/master-2.png" alt="">
+	</div>
+	<div class="workers__item-info">
+		<h3>Иван Романов</h3>
+		<span>Мастер отделки</span>
+	</div>
+</div>
+<div class="workers__item">
+	<div class="workers__item-image">
+		<img src="./images/master-3.png" alt="">
+	</div>
+	<div class="workers__item-info">
+		<h3>Петр Рюрик</h3>
+		<span>Мастер отделки</span>
+	</div>
+</div>
+<div class="workers__item">
+	<div class="workers__item-image">
+		<img src="./images/master-4.png" alt="">
+	</div>
+	<div class="workers__item-info">
+		<h3>Семен Долгорукий</h3>
+		<span>Мастер отделки</span>
+	</div>
+</div>
+
+		</div>
+	</div>
+</section>
+
+<section class="scheme">
+	<div class="container">
+		<div class="scheme__title title">Схема нашей работы</div>
+		<div class="scheme__items owl-carousel">
+			<div class="scheme__item scheme__item_order"><span>Оставьте заявку</span></div>
+			<div class="scheme__item scheme__item_measure"><span>Бесплатный выезд замерщика</span></div>
+			<div class="scheme__item scheme__item_estimate"><span>Расчет сметы на объекте</span></div>
+			<div class="scheme__item scheme__item_contract"><span>Подписание договора</span></div>
+			<div class="scheme__item scheme__item_repairs"><span>Выполнение ремонтных работ</span></div>
+			<div class="scheme__item scheme__item_completion"><span>Сдача объекта</span></div>
+		</div>
+	</div>
+</section>
+
+<section class="insta">
+	<div class="container">
+		<div class="insta__title title">Отзывы из instagram</div>
+		<div class="insta__reviews owl-carousel">
+			<a href="./" class="insta__review">
+				<img src="./images/review-1.png" alt="">
+			</a>
+			<a href="./" class="insta__review">
+				<img src="./images/review-2.png" alt="">
+			</a>
+			<a href="./" class="insta__review">
+				<img src="./images/review-3.png" alt="">
+			</a>
+			<a href="./" class="insta__review">
+				<img src="./images/review-4.png" alt="">
+			</a>
+		</div>
+	</div>
+</section>
+
+<section class="faq faq-js">
+	<div class="container">
+		<div class="faq__items">
+			<div class="faq__item">
+				<h3 class="faq__item-title">Какой порядок оплаты?</h3>
+				<p class="faq__item-text">Мы работаем без предоплаты. Оплата производится поэтапно, после приемки каждого этапа работ.</p>
+			</div>
+			<div class="faq__item">
+				<h3 class="faq__item-title">В каком формате производится оплата?</h3>
+				<p class="faq__item-text">Выбирайте удобный для вас способ: наличными, по безналу или банковской картой.</p>
+			</div>
+			<div class="faq__item">
+				<h3 class="faq__item-title">Стоимость в смете окончательная?</h3>
+				<p class="faq__item-text">Смета и цены фиксируются за Вами после подписания и в процессе ремонта не меняется. Изменения возможны в случае вашего желания произвести дополнительные работы, после подписания двухстороннего дополнительного соглашения</p>
+			</div>
+			<div class="faq__item">
+				<h3 class="faq__item-title">Какие мастера работают на объекте?</h3>
+				<p class="faq__item-text">В нашей компании работают узконаправленые специалисты. Граждане РФ/</p>
+			</div>
+			<div class="faq__item">
+				<h3 class="faq__item-title">Есть ли лицензии и сертификаты?</h3>
+				<p class="faq__item-text">Да, мы работаем согласно ГОСТ и СНиП. На инженерные и строительные работы есть допуск СРО и сертификат ISO 9001./</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer class="footer"> 
+	<div class="footer__call">
+		<span>Остались вопросы? Звоните нам</span> 
+		<a href="tel:+74597277789">+7 (459) 727-77-89</a>
+	</div>
+</footer> 
+<script type="text/javascript" charset="utf-8" src="jquery.min.js"></script>
+<script src="common.js"></script> 
+</body> 
+</html> 

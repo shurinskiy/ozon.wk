@@ -1,0 +1,124 @@
+.calculator {
+	$self: &;
+	background-color: #fff;
+	color: #000;
+	border: 1px solid #eaeaea;
+	box-sizing: border-box;
+	padding: 70px 50px 50px;
+
+	&__title {
+		font-family: "MB", sans-serif;
+		font-size: 24px;
+		line-height: 1.2;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+
+	&__form {
+
+	}
+
+	&__terms {
+		border-bottom: 1px solid #bbb;
+		margin-bottom: 30px;
+		padding-bottom: 20px;
+	}
+
+	&__term {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 25px;
+		align-items: flex-end;
+	}
+
+	&__label {
+		box-sizing: border-box;
+		width: 50%;
+		padding: 0 15px 10px 0;
+		line-height: 1.2;
+	}
+
+	&__field {
+		flex-grow: 1;
+		display: flex;
+		
+		&_select {
+			font-family: "MB", sans-serif;
+			background: url('#{$images-path}icons-sprite.svg#icon-arr-down-view-dark') center right / 13px 9px no-repeat transparent;
+			border-bottom: 1px solid #bbb;
+
+			select {
+				outline: none;
+				appearance: none;
+				border: none;
+				background: none;
+				padding: 10px 0;
+				width: 100%;
+
+				option {
+					font-family: "M", sans-serif;
+				}
+			}
+		}
+
+		&_phone {
+			border-bottom: 1px solid #bbb;
+			
+			input {
+				margin-bottom: 10px;
+			}
+		}
+
+		&_time {
+			font-family: "MB", sans-serif;
+			padding-bottom: 10px;
+
+			span {
+				margin: 0 5px;
+			}
+		}
+	}
+
+	&__field-range {
+		flex-grow: 1;
+		align-self: center;
+	}
+
+	&__field-space {
+		font-family: "MB", sans-serif;
+		line-height: 1.1;
+		margin-right: 10px;
+		
+		span {
+			display: inline-block;
+			box-sizing: border-box;
+			text-align: center;
+			min-height: 35px;
+			min-width: 35px;
+			background-color: #dedede;
+			padding: 9px 7px;
+			margin-right: 5px;
+		}
+
+		sup {
+			font-size: 10px;
+			vertical-align: super;			
+		}
+	}
+
+	&__get-btn {
+		display: block;
+		margin: 0 auto 15px;
+		font-size: 18px;
+		padding: 17px 30px 14px;
+	}
+
+	&__agreement {
+		text-align: center;
+		color: #b2b2b2;
+
+		a {
+			color: inherit;
+		}
+	}
+}

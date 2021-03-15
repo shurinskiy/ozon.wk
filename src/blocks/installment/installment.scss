@@ -1,0 +1,49 @@
+.installment {
+	$self: &;
+	background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('./images/bg-installment.png') center / auto no-repeat transparent;
+	
+	&__inner {
+		padding: 160px 0 120px 60px;
+		display: flex;
+		align-items: center;
+		background: url('./images/round.svg') left 20% center / auto no-repeat transparent;
+	}
+
+	&__side {
+		margin-right: 30px;
+	}
+
+	&__title {
+		font-family: "MB", sans-serif;
+		font-size: 36px;
+		line-height: 1.2;
+		margin-bottom: 60px;
+	}
+	
+	&__list {
+		margin-bottom: 30px;
+		font-family: "MB", sans-serif;
+		font-size: 18px;
+		line-height: 1.2;
+
+		li {
+			margin-bottom: 10px;
+		}
+
+		li::before {
+			content: '>';
+			display: inline-block;
+			color: #aaa;
+			margin: 0 10px 0 -8px;
+		}
+	}
+
+	&__order.button {
+		padding: 22px 25px 20px;
+	}
+
+	&__img {
+
+	}
+
+}

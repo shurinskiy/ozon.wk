@@ -1,0 +1,59 @@
+.scheme {
+	$self: &;
+	background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('./images/bg-scheme.png') center / auto no-repeat transparent;
+	padding: 50px 0 70px;
+
+	&__title {
+		text-align: center;
+		margin-bottom: 60px;
+	}
+
+	&__items {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__item {
+
+		&::before {
+			display: block;
+			content: '';
+			width: 90px;
+			height: 90px;
+			border-radius: 50%;
+			margin: 0 auto 20px;
+			background: url('#{$images-path}icons-sprite.svg#icon-finishing-view-grey') center / 42px 42px no-repeat #fff;
+		}
+
+		span {
+			max-width: 170px;
+			display: block;
+			text-align: center;
+		}
+
+		&_completion::before {
+			background-image: url('#{$images-path}icons-sprite.svg#icon-finishing-view-grey');
+		}
+		
+		&_contract::before {
+			background-image: url('#{$images-path}icons-sprite.svg#icon-contract-view-grey');
+		}
+		
+		&_estimate::before {
+			background-image: url('#{$images-path}icons-sprite.svg#icon-count-view-grey');
+		}
+		
+		&_measure::before {
+			background-image: url('#{$images-path}icons-sprite.svg#icon-car-view-grey');
+			background-size: 61px 61px;
+		}
+		
+		&_order::before {
+			background-image: url('#{$images-path}icons-sprite.svg#icon-call-view-grey');
+		}
+		
+		&_repairs::before {
+			background-image: url('#{$images-path}icons-sprite.svg#icon-repair-view-grey');
+		}
+	}
+}

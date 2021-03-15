@@ -1,0 +1,50 @@
+.license {
+	$self: &;
+	background: url('./images/double-round-light.svg') center / auto no-repeat #fff;
+	padding: 150px 0 100px;
+
+	&__inner {
+		display: flex;
+		align-items: center;
+	}
+	
+	&__title {
+		width: 32%;
+	}
+	
+	&__items {
+		width: 68%;
+
+		.owl-stage {
+			box-sizing: border-box;
+			display: flex;
+		}
+	}
+
+	&__item {
+		// @include outline();
+		height: 100%;
+		display: flex;
+		flex-flow: column wrap;
+	}
+
+	&__item-image {
+		padding-top: 15px;
+		margin-bottom: 30px;
+
+		img {
+			transform: perspective(200px) rotateY(5deg);
+			transition: transform 0.5s ease;
+		}
+
+		&:hover img {
+			transform: rotate(0);
+		}
+	}
+
+	&__item-name {
+		margin-top: auto;
+		display: block;
+		text-align: center;
+	}
+}

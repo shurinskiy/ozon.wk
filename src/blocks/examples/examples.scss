@@ -1,0 +1,155 @@
+.examples {
+	$self: &;
+	background: linear-gradient(180deg, rgba(255,255,255,0.9) 45%, rgba(255,255,255,0) 100%), url('./images/bg-workshop.png') top center / cover no-repeat;
+	padding: 50px 0;
+
+	&__inner {
+
+	}
+
+	&__title {
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	&__slider {
+		display: none !important;
+		border: 1px solid #DEDEDE;
+		
+		&.active {
+			display: block !important;
+		}
+		
+		.owl-dots {
+			box-sizing: border-box;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 50%;
+			display: flex;
+			justify-content: center;
+			padding: 0 35px 18px;
+		}
+		
+		.owl-stage {
+			box-sizing: border-box;
+			display: flex;
+		}
+	}
+
+	&__slide {
+		box-sizing: border-box;
+		display: flex;
+		height: 100%;
+		max-height: 470px;
+		margin-left: 2px;  //?
+	}
+
+	&__image {
+		box-sizing: border-box;
+		width: 50%;
+		
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	
+	&__side {
+		box-sizing: border-box;
+		width: 50%;
+		background-color: #fff;
+		padding: 40px;
+	}
+
+	&__side-title {
+		margin-bottom: 25px;
+	}
+
+	&__side-note {
+		font-size: 14px;
+		line-height: 1.2;
+		margin-bottom: 30px;
+	}
+	
+	&__side-text {
+		font-size: 14px;
+		line-height: 1.7;
+		margin-bottom: 30px;
+	}
+
+	&__side-button.button {
+		padding: 15px;
+		font-size: 18px;
+		min-width: 250px;
+	}
+
+	&__buttons {
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	
+	&__button {
+		box-sizing: border-box;
+		background-color: #fff;
+		border: 1px solid #dadada;
+		box-shadow: none;
+		appearance: none;
+		outline: none;
+		color: #000;
+		text-align: center;
+		font-family: "MB", sans-serif;
+		font-size: 14px;
+		line-height: 1.1;
+		text-transform: uppercase;
+		padding: 13px;
+		min-width: 225px;
+		margin: 0 10px;
+		cursor: pointer;
+
+		&.active {
+			border-color: #FDCA0D;
+		}
+	}
+
+	&__prev, &__next {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		cursor: pointer;
+		background: none;
+		outline: none;
+		border: none;
+		padding: 0;
+		width: 38px;
+		height: 38px;
+		border-radius: 50%;
+		z-index: 1;
+	}
+
+	&__next {
+		right: -18px;
+		background: url('#{$images-path}icons-sprite.svg#icon-arr-right-view-white') right 11px center / 12px 20px no-repeat #979797;
+	}
+	
+	&__prev {
+		left: -18px;
+		background: url('#{$images-path}icons-sprite.svg#icon-arr-left-view-white') left 11px center / 12px 20px no-repeat #979797;
+	}
+
+	&__dot {
+		outline: none;
+		appearance: none;
+		cursor: pointer;
+		padding: 0;
+		border: 2px solid #fff;
+		flex-grow: 1;
+		margin: 0 7px;
+		@include aspect-ratio(1.35, 1);
+
+		&.active {
+			border: 2px solid #FDCA0D;
+		}
+	}
+}

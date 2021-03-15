@@ -1,0 +1,33 @@
+.footer {
+	$self: &;
+	background-color: #383838;
+	min-height: 130px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 20px;
+
+	&__call {
+		font-family: "MB", sans-serif;
+		font-size: 18px;
+
+		span {
+			display: inline-block;
+			padding: 14px 0;
+			color: #fff;
+			margin-right: 35px;
+
+			@include media('<xxs') {
+				margin: 0;
+			}
+		}
+		
+		a {
+			white-space: nowrap;
+			text-decoration: none;
+			color: #FDCA0D;
+			padding-left: 25px;
+			background: url('#{$images-path}icons-sprite.svg#icon-phone-view-white') center left / 19px 19px no-repeat transparent;
+		}
+	}
+}

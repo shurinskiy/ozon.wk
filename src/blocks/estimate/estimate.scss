@@ -1,0 +1,70 @@
+.estimate {
+	$self: &;
+	background: url('./images/double-round.svg') center / auto no-repeat #fff;
+	padding: 90px 0 20px;
+
+	&__inner {
+		display: flex;
+		align-items: center;
+	}
+
+	&__call {
+		width: 48%;
+	}
+
+	&__text {
+		font-family: "MB", sans-serif;
+		font-size: 28px;
+		line-height: 1.4;
+		margin-bottom: 70px;
+		max-width: 550px;
+	}
+
+	&__form {
+		display: flex;
+	}
+
+	&__input-phone.phone {
+		background-color: #fff;
+		border: 1px solid #afafaf;
+		margin-right: 20px;
+		padding: 14px 16px;
+	}
+
+	&__input-submit {
+
+	}
+
+	&__side {
+		width: 52%;
+		display: flex;
+		align-items: center;
+	}
+
+	&__img {
+		margin-right: 50px;
+
+		img { min-width: 310px; }
+	}
+
+	&__download {
+		font-family: "MB", sans-serif;
+		font-size: 18px;
+		line-height: 1.3;
+		max-width: 190px;
+
+		&::before {
+			content: '';
+			display: block;
+			margin: 0 0 20px 20px;
+			width: 120px;
+			height: 120px;
+			background: url('./images/image-getpdf.png') center / auto no-repeat transparent;
+		}
+
+		a {
+			color: #E0B30D;
+			text-decoration: none;
+		}
+	}
+}
