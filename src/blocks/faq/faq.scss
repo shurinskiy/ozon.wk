@@ -2,6 +2,11 @@
 	$self: &;
 	margin-bottom: 50px;
 
+	&__title {
+		text-align: center;
+		margin-bottom: 45px;
+	}
+
 	&__items {
 
 	}
@@ -17,6 +22,12 @@
 		font-family: "MB", sans-serif;
 		padding: 20px 28px;
 		cursor: pointer;
+		background: url('#{$images-path}icons-sprite.svg#icon-plus-view-grey') right 20px center / 18px 17px no-repeat transparent;
+
+		&.opened {
+			background-image: url('#{$images-path}icons-sprite.svg#icon-minus-view-grey');
+			background-size: 17px 4px;
+		}
 	}
 	
 	&__item-text {

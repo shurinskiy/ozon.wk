@@ -1,0 +1,10 @@
+.map {
+	$self: &;
+	height: 450px;
+	overflow: hidden;
+	background: url('./images/bg-map.jpg') center / auto no-repeat transparent;
+
+	iframe {
+		outline: none;
+	}
+}

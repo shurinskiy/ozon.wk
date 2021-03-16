@@ -9,12 +9,14 @@
 		$('.faq__items')
 			.find('.faq__item-text:visible')
 			.not($block)
-			.removeClass('opened')
-			.slideUp(400);
-		
+			.slideUp(400)
+			.prev('.faq__item-title')
+			.removeClass('opened');
+			
 		$block
-			.toggleClass('opened')
-			.slideToggle(400); // если slideDown(), то один все время открыт
+			.slideToggle(400)
+			.prev('.faq__item-title')
+			.toggleClass('opened');
 	});
 
 })();

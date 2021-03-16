@@ -2,14 +2,14 @@ import 'owl.carousel';
 
 (() => {
 
-	$('.insta__items').owlCarousel({
+	$('.reviews__items').owlCarousel({
 		loop: true,
 		items: 4,
-		margin: 12,
+		margin: 50,
 		dots: false,
 		nav: true,
 		navText: ['', ''],
-		navClass: ['insta__prev', 'insta__next']
+		navClass: ['reviews__prev', 'reviews__next']
 	});
 
 })();
