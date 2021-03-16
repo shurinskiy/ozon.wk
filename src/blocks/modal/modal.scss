@@ -72,6 +72,10 @@
 		box-sizing: border-box;
 		margin: 0 15px 25px;
 		width: calc(100% - 30px);
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 		
 		&_half {
 			width: calc(50% - 30px);
@@ -94,7 +98,7 @@
 		font-family: "SL", sans-serif;
 		font-size: 15px;
 		line-height: 1.1;
-		// border: 1px solid $grey;
+		border: 1px solid #ddd !important;
 		background: none;
 		outline: none;
 		border-radius: 5px;
@@ -120,25 +124,16 @@
 		margin-bottom: 5px;
 	}
 	
-	&__submit {
-		outline: none;
-		appearance: none;
-		text-transform: uppercase;
-		font-family: "SB", sans-serif;
+	&__submit.button {
 		font-size: 16px;
-		line-height: 1.1;
-		// background-color: $red;
-		color: #fff;
-		border: none;
-		padding: 17px;
-		cursor: pointer;
+		padding: 15px 15px 12px;
 	}
 	
 	&__note {
+		padding-top: 15px;
 		font-size: 12px;
-		line-height: 1.5;
+		line-height: 1.2;
 		margin-bottom: 0;
-		text-align: center;
 
 		a {
 			// color: $cyan;

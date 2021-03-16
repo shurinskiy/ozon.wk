@@ -1,4 +1,5 @@
 import { disablePageScroll, enablePageScroll } from 'scroll-lock';
+import "inputmask/lib/jquery.inputmask";
 
 (() => {
 	let cls = 'modal';
@@ -40,6 +41,8 @@ import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 			.html(content)
 			.end()
 			.fadeIn();
+
+		$modal.find('input.phone[type="tel"]').inputmask();	
 	}
 	
 	// Открыть модальное окно
