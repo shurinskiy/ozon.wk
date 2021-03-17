@@ -27,6 +27,10 @@
 			display: block !important;
 		}
 
+		.owl-stage-outer {
+			box-sizing: border-box;
+		}
+
 		.owl-stage {
 			padding: 45px 0;
 		}

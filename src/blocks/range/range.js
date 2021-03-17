@@ -20,6 +20,7 @@
 		let $scale = $bar.find('.range__scale');
 		let $handler = $bar.find('.range__handler');
 		let $output = $('.range__output');
+		let $time = $('.calculator__field_time');
 		let initial = getPercentage($self.val());
 
 		$scale.css({width: initial});
@@ -32,6 +33,18 @@
 			$scale.css({width: value});
 			$handler.css({left: value});
 			$output.text(this.value);
+
+			if (this.value > 200) {
+				$time.text("От 150 дней");
+			} else if (this.value > 120) {
+				$time.text("От 120 до 180 дней");
+			} else if (this.value > 80) {
+				$time.text("От 90 до 120 дней");
+			} else if (this.value > 50) {
+				$time.text("От 60 до 90 дней");
+			} else {
+				$time.text("От 45 до 60 дней");
+			}
 		});
 	});
 
