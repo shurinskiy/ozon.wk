@@ -4,7 +4,6 @@ import 'owl.carousel';
 
 	$('.reviews__items').owlCarousel({
 		loop: true,
-		items: 4,
 		margin: 50,
 		dots: false,
 		nav: true,
@@ -25,5 +24,4 @@ import 'owl.carousel';
 			}
 		}
 	});
-
 })();
