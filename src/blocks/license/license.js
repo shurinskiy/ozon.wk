@@ -9,7 +9,18 @@ import 'owl.carousel';
 		dots: false,
 		nav: true,
 		navText: ['', ''],
-		navClass: ['license__prev', 'license__next']
+		navClass: ['license__prev', 'license__next'],
+		responsive: {
+			0: {
+				items: 1,
+			},
+			480: {
+				items: 2,
+			},
+			640: {
+				items: 3,
+			}
+		}
 	});
 
 })();

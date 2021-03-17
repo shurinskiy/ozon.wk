@@ -9,7 +9,21 @@ import 'owl.carousel';
 		dots: false,
 		nav: true,
 		navText: ['', ''],
-		navClass: ['insta__prev', 'insta__next']
+		navClass: ['insta__prev', 'insta__next'],
+		responsive: {
+			0: {
+				items: 1,
+			},
+			480: {
+				items: 2,
+			},
+			640: {
+				items: 3,
+			},
+			960: {
+				items: 4,
+			}
+		}
 	});
 
 })();

@@ -9,8 +9,9 @@ import 'owl.carousel';
 		navText: ['', ''],
 		navClass: ['quality__prev', 'quality__next'],
 		responsive: {
-			1440: { items: 4 },
-			640: { items: 4 },
+			960: { items: 4 },
+			780: { items: 3 },
+			480: { items: 2 },
 			0: { items: 1 }
 		}
 	});

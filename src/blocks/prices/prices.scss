@@ -3,17 +3,31 @@
 	padding-top: 50px;
 	background: linear-gradient(180deg, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0) 100%), url('./images/bg-prices.png') top center / cover no-repeat;
 
+	&__container {
+		
+		@include media('<=xxs') {
+			padding: 0;
+		}
+	}
+
 	&__title {
 		text-align: center;
 		font-family: "MB", sans-serif;
 		font-size: 36px;
 		line-height: 1.1;
 		margin-bottom: 25px;
+		
+		@include media('<=xxs') {
+			font-size: 22px;
+		}
 	}
 
 	&__buttons {
 		text-align: center;
-		margin-bottom: 30px;
+		
+		@include media('<=xxs') {
+			margin-bottom: 15px;
+		}
 	}
 	
 	&__button {
@@ -31,22 +45,31 @@
 		text-transform: uppercase;
 		padding: 13px;
 		min-width: 225px;
-		margin: 0 10px;
+		margin: 0 10px 30px;
 		cursor: pointer;
-
+		
 		&.active {
 			border-color: #FDCA0D;
+		}
+		
+		@include media('<=xxs') {
+			margin-bottom: 15px;
 		}
 	}
 
 	&__row {
-		display: none;
+		display: none !important;
 		position: relative;
 		z-index: 2;
-		margin: 0 -10px -65px;
+		margin: 0 0 -65px;
+		max-height: 650px;
 		
 		&.active {
-			display: flex;
+			display: flex !important;
+		}
+		
+		@include media('<=xxs') {
+			margin-bottom: 0px;
 		}
 	}
 
@@ -55,12 +78,13 @@
 		display: flex;
 		flex-flow: column nowrap;
 		background-color: #fff;
-		margin: 0 10px;
-		width: calc(99.9% / 3 - 20px);
+		max-width: 470px;
+		margin: 0 auto;
+		// width: calc(99.9% / 3 - 20px);
 
-		@include media('<=lg') {
+		/* @include media('<=lg') {
 			width: calc(99.9% / 3 - 20px);
-		}
+		} */
 	}
 
 	&__item-title {
@@ -130,5 +154,42 @@
 	&__item-order-btn {
 		align-self: center;
 		margin-top: auto;
+	}
+
+	&__prev, &__next {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		cursor: pointer;
+		background: none;
+		outline: none;
+		border: none;
+		padding: 0;
+		width: 38px;
+		height: 38px;
+		border-radius: 50%;
+		z-index: 1;
+		
+		@include media('<=xxs') {
+			top: 22%;
+		}
+	}
+
+	&__next {
+		right: -18px;
+		background: url('#{$images-path}icons-sprite.svg#icon-arr-right-view-white') right 11px center / 12px 20px no-repeat #979797;
+		
+		@include media('<=xxs') {
+			right: 8px;
+		}
+	}
+	
+	&__prev {
+		left: -18px;
+		background: url('#{$images-path}icons-sprite.svg#icon-arr-left-view-white') left 11px center / 12px 20px no-repeat #979797;
+		
+		@include media('<=xxs') {
+			left: 8px;
+		}
 	}
 }

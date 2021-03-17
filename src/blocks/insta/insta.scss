@@ -8,6 +8,15 @@
 		font-size: 36px;
 		line-height: 1.3;
 		text-align: center;
+
+		@include media('<=sm') {
+			font-size: 24px;
+			text-transform: uppercase;
+		}
+
+		@include media('<=xs') {
+			font-size: 22px;
+		}
 	}
 
 	&__items {

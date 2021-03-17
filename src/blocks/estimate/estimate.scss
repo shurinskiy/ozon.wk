@@ -2,14 +2,30 @@
 	$self: &;
 	background: url('./images/double-round.svg') center / auto no-repeat #fff;
 	padding: 90px 0 20px;
+		
+	@include media('<=xxs') {
+		padding: 70px 0 70px;
+	}
 
 	&__inner {
 		display: flex;
 		align-items: center;
+		
+		@include media('<=sm') {
+			flex-wrap: wrap;
+		}
 	}
 
 	&__call {
 		width: 48%;
+
+		@include media('<=lg') {
+			width: 50%;
+		}
+		
+		@include media('<=sm') {
+			width: 100%;
+		}
 	}
 
 	&__text {
@@ -18,33 +34,92 @@
 		line-height: 1.4;
 		margin-bottom: 70px;
 		max-width: 550px;
+		
+		@include media('<=md') {
+			font-size: 23px;
+		}
+		
+		@include media('<=xxs') {
+			text-align: center;
+			font-size: 20px;
+			margin-bottom: 50px;
+		}
 	}
 
 	&__form {
 		display: flex;
+		flex-wrap: wrap;
+		
+		@include media('<=xxs') {
+			justify-content: center;
+		}
 	}
 
 	&__input-phone.phone {
+		box-sizing: border-box;
 		background-color: #fff;
 		border: 1px solid #afafaf;
-		margin-right: 20px;
+		margin: 0 20px 20px 0;
 		padding: 14px 16px;
+		
+		@include media('<=xxs') {
+			margin-right: 0;
+			width: 100%;
+			max-width: 250px;
+		}
 	}
-
-	&__input-submit {
-
+	
+	&__input-submit.button {
+		margin-bottom: 20px;
+		line-height: 1.7;
+		
+		@include media('<=xxs') {
+			width: 100%;
+			max-width: 250px;
+		}
 	}
 
 	&__side {
 		width: 52%;
 		display: flex;
 		align-items: center;
+
+		@include media('<=lg') {
+			width: auto;
+			flex-grow: 1;
+		}
+		
+		@include media('<=sm') {
+			width: 100%;
+		}
+		
+		@include media('<=xs') {
+			flex-wrap: wrap;
+		}
+		
+		@include media('<=xxs') {
+			justify-content: center;
+		}
 	}
 
 	&__img {
 		margin-right: 50px;
-
-		img { min-width: 310px; }
+		
+		img { 
+			min-width: 310px; 
+		
+			@include media('<=xxxs') {
+				min-width: 0;
+			}
+		}
+		
+		@include media('<=lg') {
+			margin-right: 0px;
+		}
+		
+		@include media('<=xxxs') {
+			margin-bottom: 30px;
+		}
 	}
 
 	&__download {
@@ -60,11 +135,29 @@
 			width: 120px;
 			height: 120px;
 			background: url('./images/image-getpdf.png') center / auto no-repeat transparent;
+		
+			@include media('<=sm') {
+				margin: 0 auto 20px;
+			}
+		
+			@include media('<=xxxs') {
+				width: 100px;
+				height: 100px;
+				background-size: 75px 75px;
+			}
 		}
 
 		a {
 			color: #E0B30D;
 			text-decoration: none;
+		}
+		
+		@include media('<=sm') {
+			margin-left: 30px;
+		}
+		
+		@include media('<=xxs') {
+			margin: 0px;
 		}
 	}
 }

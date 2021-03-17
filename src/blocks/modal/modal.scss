@@ -118,11 +118,6 @@
 		@extend #{$self}__input;
 		resize: none;
 	}
-
-	&__radio {
-		display: block;
-		margin-bottom: 5px;
-	}
 	
 	&__submit.button {
 		font-size: 16px;
@@ -136,7 +131,7 @@
 		margin-bottom: 0;
 
 		a {
-			// color: $cyan;
+			color: #FDCA0D;
 			text-decoration: none;
 		}
 	}

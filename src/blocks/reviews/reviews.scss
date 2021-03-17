@@ -14,10 +14,20 @@
 		.owl-nav {
 			display: block !important;
 		}
+		
+		@include media('<=xxs') {
+			padding: 0 20px;
+		}
+		
+		@include media('<=xxxs') {
+			padding: 0 0px;
+		}
 	}
 
 	&__item {
 		display: block;
+		max-width: 230px;
+		margin: 0 auto;
 	}
 
 	&__prev, &__next {
@@ -38,10 +48,26 @@
 	&__next {
 		right: 30px;
 		background: url('#{$images-path}icons-sprite.svg#icon-arr-right-view-white') right 11px center / 12px 20px no-repeat #c4c4c4;
+		
+		@include media('<=xxs') {
+			right: 5px;
+		}
+		
+		@include media('<=xxxs') {
+			right: -18px;
+		}
 	}
 	
 	&__prev {
 		left: 30px;
 		background: url('#{$images-path}icons-sprite.svg#icon-arr-left-view-white') left 11px center / 12px 20px no-repeat #c4c4c4;
+		
+		@include media('<=xxs') {
+			left: 5px;
+		}
+		
+		@include media('<=xxxs') {
+			left: -18px;
+		}
 	}
 }

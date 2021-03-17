@@ -10,7 +10,18 @@ import 'owl.carousel';
 		dots: false,
 		nav: true,
 		navText: ['', ''],
-		navClass: ['video__prev', 'video__next']
+		navClass: ['video__prev', 'video__next'],
+		responsive: {
+			0: {
+				items: 1,
+			},
+			640: {
+				items: 2,
+			},
+			960: {
+				items: 3,
+			}
+		}
 	});
 
 	// Загрузка видео с youtube
